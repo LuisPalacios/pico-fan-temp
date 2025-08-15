@@ -1,36 +1,23 @@
-# Plantilla para proyectos C++
+# Controlador Fan y Temp desde Pico
 
 ![C++](https://img.shields.io/badge/C%2B%2B-11%2F14%2F17%2F20%2F23-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Linux Build](https://github.com/LuisPalacios/CppPlantilla/actions/workflows/ubuntu.yml/badge.svg)
-![MacOS Build](https://github.com/LuisPalacios/CppPlantilla/actions/workflows/macos.yml/badge.svg)
-[![codecov](https://codecov.io/gh/LuisPalacios/CppPlantilla/graph/badge.svg?token=VXUOCDCWQ5)](https://codecov.io/gh/LuisPalacios/CppPlantilla)
+![Linux Build](https://github.com/LuisPalacios/pico-fan-temp/actions/workflows/ubuntu.yml/badge.svg)
+![MacOS Build](https://github.com/LuisPalacios/pico-fan-temp/actions/workflows/macos.yml/badge.svg)
+[![codecov](https://codecov.io/gh/LuisPalacios/pico-fan-temp/graph/badge.svg?token=VXUOCDCWQ5)](https://codecov.io/gh/LuisPalacios/pico-fan-temp)
 
 &nbsp;
 
 ## Cómo utilizar la plantilla
 
-- Desde GitHub, clona esta plantilla y úsala al crear un nuevo Repositorio:
-  - **Repository name**: Nombre de tu nuevo repositorio
-  - **Repository template**: CppPlantilla
-  - **Include All Branches**: `[x]` (Para que incluya `gh-pages`)
-  - **Description**: Añadir una descripción opcional.
-- Realiza los siguientes cambios para que se publique en tu GitHub Pages
-  - Repositorio -> Settings -> Pages
-    - **Source: Deploy from a branch**
-    - **Branch: gh-pages  Directorio: /(root))  Clic en SAVE**
-  - Repositorio -> Settings -> Actions -> General
-    - **Workflow Permissions: Read and write**
-  - Modifica el fichero `./docs/Doxyfile` y cambia la siguiente línea.
-    - **PROJECT_NAME = "C++ Plantilla LuisPa"**
 - Entra en tu cuenta de [codecov.io](https://codecov.io) y configura el nuevo repo.
+  - Coverage > Repository token > generate
   - **CODECOV_TOKEN**: Añade nuevo `repository secret` en Repo > settings > secrets ... > actions
   - `.github/workflows/ubuntu.yml`: Cambia (`slug: TuCuentaGitHub/CppPlantilla`) con tu usuario/repo.
 - Verifica y adapta el fichero `.vscode/settings.json` a tus gustos.
 - Modifica este fichero `./README.md`
   - Cambia la primera línea por el título de tu proyecto
   - Cambia los enlaces a los cuatro Badges: C++, Licencia, Build, Codecov.
-  - Cambia el contenido desde `## Cómo utilizar la plantilla` por el tuyo.
 - Empieza a codificar, cambia los fuentes incluidos como ejemplo:
   - `./tests/main.cc`
   - `./src/my_lib/my_lib.cc`
